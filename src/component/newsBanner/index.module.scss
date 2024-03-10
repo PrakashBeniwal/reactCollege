@@ -1,0 +1,26 @@
+.banner{
+    background-color:var(--background-sidebar);
+    padding: 0 1vw;
+    height: 4vh;
+    overflow: hidden;
+    cursor: pointer;
+
+    .bg{
+        background-color: red;
+    }
+  
+  .scrolling {
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+  }
+  
+  .paused {
+    animation-play-state: paused;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+}

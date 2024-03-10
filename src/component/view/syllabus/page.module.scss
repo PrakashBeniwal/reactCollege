@@ -1,0 +1,48 @@
+.Syllabus {
+
+    .banner {
+        text-align: center;
+        background-color: #008000;
+        padding: 1vh;
+        margin: 1vh 0;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+
+        & :nth-child(2){
+            font-weight: 300;
+        }
+    }
+
+    .details {
+        margin: 0 2vw;
+        color: black;
+        height: 60vh;
+        overflow-x: scroll;
+
+        @media (max-width:750px) {
+            height: 45vh;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        select{
+            width: 20%;
+            outline: none;   
+            
+            @media (max-width:750px) {
+                width: 50%;
+            }
+        }
+
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+
+    }
+}

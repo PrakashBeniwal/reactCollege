@@ -1,0 +1,18 @@
+.sidebar{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    overflow-y: scroll;
+    height: 100%;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .route{
+        display: flex;
+        justify-content: center;
+        border-bottom: .2px solid #6883B3;
+        padding: 1vh;
+    }
+}

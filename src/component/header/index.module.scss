@@ -1,0 +1,83 @@
+.header{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-header);
+    padding: 0 2vw;
+    align-items: center;
+
+    .hide{
+        display: none;
+    }
+
+    .leftbar{
+
+        .sidebar{
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            background-color: var(--background-sidebar);
+            width: 250px;
+            border-radius: 5px;
+            padding-top: 10vh;
+        }
+
+        .back{
+            position: fixed;
+            background-color: rgba(211, 211, 211, 0.445);
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+        }
+    }
+    
+       
+
+    .logo{
+        margin:5px;
+    }
+
+    .logo2{
+        margin: 5px;
+
+        @media (max-width:750px) {
+            display: none;
+        }
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        & > div{
+            height: 5px;
+            font-weight: bold;
+        }
+
+        @media (min-width:750px) {
+            display: none;
+        }
+    }
+
+    .name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .college{
+            font-size: 4vmin;
+            font-weight: 900;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    
+        .univercity{
+            font-size: 3vmin;
+        }
+    }
+
+   
+}
+
+
+

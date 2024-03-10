@@ -1,0 +1,34 @@
+.Contacts{
+
+    .banner {
+        text-align: center;
+        background-color: #008000;
+        padding: 1vh;
+        margin: 1vh 0;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+
+        & :nth-child(2){
+            font-weight: 300;
+        }
+    }
+
+    .details{
+        margin: 0 1vw;
+        color: black;
+        overflow-x: scroll;
+        height: 60vh;
+        overflow-x: scroll;
+
+        @media (max-width:750px) {
+            height: 45vh;
+        }
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+    }
+}

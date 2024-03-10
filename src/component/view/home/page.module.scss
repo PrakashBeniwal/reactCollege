@@ -1,0 +1,84 @@
+.home {
+    color: black;
+    height: 100%;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1vw;
+
+    .main {
+
+        .header {
+            background-color: var(--background-sidebar);
+            display: flex;
+            color: white;
+            margin-top: 10px;
+            border: 1px solid black;
+
+
+            div {
+                padding: 5px;
+                flex: 1;
+                text-align: center;
+
+                &:first-child {
+                    border-right: 2px solid black;
+
+                    @media (max-width:500px) {
+                        display: none;
+
+                    }
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            color: black;
+            border: 1px solid black;
+            height: 60vh;
+
+            @media (max-width:500px) {
+                height: 50vh;
+                // flex-direction: column;
+
+            }
+
+            .college {
+                border-right: 2px solid black;
+                // background-image: url('../public/mainDep.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                @media (max-width:500px) {
+                    display: none;
+
+                }
+
+            }
+
+            div {
+                flex: 1;
+                text-align: center;
+
+            }
+
+            .notification {
+                display: flex;
+                flex-direction: column;
+
+                a::before{
+                    content: "\f0da";
+                    font-family: 'FontAwesome';
+                    margin-right: 5px;
+                    color: #f00;
+                    font-size: 18px;
+                    line-height: 1.0!important;
+                }
+            }
+        }
+    }
+
+
+}
